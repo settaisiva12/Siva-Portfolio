@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Siva's Portfolio</title>
+
+  <!-- bootstrap css cdn link  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
+  <!-- custom css file -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- bootstrap icon cdn link  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
+
+  <!-- for adding animation to website we have use AOS library 
+    AOS Library css file cdn link -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- jquery cdn link  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+  <!-- navbar starts -->
+  <nav id="navbar-top" class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <div class="container-fluid px-5">
+      <a class="navbar-brand fw-bold fs-2" href="#" style="color: #120098">Portfolio</a>
+      <button class="nav-menu d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <i class="bi bi-menu-button-fill"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#service">Experience</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        </div>
+        <button
+          onclick="window.location.href='#contact'"
+          class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+          Contact Us
+        </button>
+      </div> 
+  </nav>
+  <!-- navbar ends here -->
+
+  <!-- home section starts  -->
+  <section class="home pt-5 pb-5" id="home">
+    <div class="row justify-content-evenly align-middle">
+      <!-- here data-aos is used for adding aos animation  -->
+      <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
+        <h2 style="color: #3f396d">
+          Hello! I Am <br /><span class="c-orange">Sivaganesh</span>
+        </h2>
+        <p class="text-muted">
+          A UI & UX Designer with a passion for creating user friendly and visually appealing interfaces. Proven ability
+          to understand user needs and translate them into effective designs. Strong skills in User research,
+          wire-framing, Prototyping, Design principles and visual design.
+        </p>
+        <button
+          onclick="window.location.href='https://drive.google.com/file/d/1GqSvK_4RbuHjewBtCjZmZuP5mHM72YZ0/view?usp=sharing'"
+          class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+          Download Resume
+        </button>
+
+        <a href="" class="link ms-4 d-none">See My Work</a>
+      </div>
+      <div class="col-10 col-md-4 d-none d-md-block">
+        <img src="images/siva.png" class="img-fluid" alt="" />
+      </div>
+    </div>
+  </section>
+  <!-- home section ends here -->
+
+  <!-- skill section starts -->
+  <section class="skill mt-5 py-5" id="about">
+    <div class="row justify-content-evenly">
+      <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-right">
+        <div class="row justify-content-evenly">
+          <div class="col-10 col-md-6">
+            <div class="progress-card ms-3 ms-md-0">
+              <div class="circular-progress html-css">
+                <span class="progress-value html-progress">0%</span>
+              </div>
+              <br />
+              <span class="text">Figma</span>
+            </div>
+          </div>
+          <div class="col-10 col-md-6 mt-4 mt-md-0">
+            <div class="progress-card ms-3 ms-md-0">
+              <div class="circular-progress javascript">
+                <span class="progress-value javascript-progress">0%</span>
+              </div>
+              <br />
+              <span class="text">Html&CSS</span>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-evenly mt-4">
+          <div class="col-10 col-md-6">
+            <div class="progress-card ms-3 ms-md-0">
+              <div class="circular-progress php">
+                <span class="progress-value php-progress">0%</span>
+              </div>
+              <br />
+              <span class="text">UI/UX</span>
+            </div>
+          </div>
+          <div class="col-10 col-md-6 mt-4 mt-md-0">
+            <div class="progress-card ms-3  ms-md-0">
+              <div class="circular-progress reactjs">
+                <span class="progress-value reactjs-progress">0%</span>
+              </div>
+              <br>
+              <span class="text">JS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
+        <div class="heading mt-5 mt-md-3">
+          <small>About</small>
+          <h3>My background and skills</h3><br>
+          <p class="text-muted">
+            I have a solid foundation in UI/UX , Figma , Html & CSS, and creating design for Web and mobile platforms.
+          </p>
+          <p class="text-muted">
+            I excel at creating designs that are both creative and interactive, ensuring an engaging user experience.
+          </p>
+          <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+            <!-- here download attribute is used for adding download functionality to button  -->
+            <a href="https://drive.google.com/file/d/1GqSvK_4RbuHjewBtCjZmZuP5mHM72YZ0/view?usp=sharing"
+              download="SampleCV" style="text-decoration: none;color: #fff;">Download Resume</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- skill section end here -->
+
+  <!-- expertise section starts -->
+  <section class="expertise mt-5" id="service">
+    <div class="heading text-center">
+      <small>My Experience</small>
+      <h3>
+        These are the works that  <br>
+        I am able to perform .
+      </h3>
+    </div>
+    <div class="row justify-content-evenly mt-5">
+      <div class="col-10 col-md-4" data-aos="fade-up">
+        <div class="service-card">
+          <div class="img">
+            <img src="images/illustration.png" class="w-25 img-fluid img" alt="" />
+          </div>
+          <div class="content mt-3">
+            <h4>UI Design</h4>
+            <p class="text-muted">
+               Crafting intuitive and visually compelling user interfaces that 
+               enhance user experience and bring ideas to life.
+            </p>
+            <!-- <a href="" class="link">Read More</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-10" data-aos="fade-up">
+        <div class="service-card">
+          <div class="img">
+            <img src="images/ux.png" class="w-25 img-fluid img" alt="" />
+          </div>
+          <div class="content mt-3">
+            <h4>UX Research</h4>
+            <p class="text-muted">
+              I conduct in-depth UX research to uncover user needs, behaviors, and motivations, ensuring that 
+              design decisions are informed and user-centric.
+            </p>
+            <!-- <a href="" class="link">Read More</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-10" data-aos="fade-up">
+        <div class="service-card">
+          <div class="img">
+            <img src="images/designer.png" class="w-25 img-fluid img" alt="" />
+          </div>
+          <div class="content mt-3">
+            <h4>WEb Design</h4>
+            <p class="text-muted">
+              I create visually appealing and responsive web designs using HTML and CSS,
+               ensuring seamless user experiences across all devices
+            </p>
+            <!-- <a href="" class="link">Read More</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- expertise section ends here -->
+
+
+
+  <!-- portfolio section starts here -->
+  <section class="portfolio" id="portfolio">
+    <div class="heading text-center pt-5">
+      <small>Creative Work</small>
+      <h3>Check My Projects</h3>
+    </div>
+
+    <div id="myBtnContainer" class="text-center mt-4">
+      <!-- here we will create custom attribute using data- for filtering -->
+      <button class="filter-item" data-filter="all">All</button>
+      <button class="filter-item" data-filter="game">Game</button>
+      <button class="filter-item" data-filter="webapp">Website Redesign</button>
+      <button class="filter-item" data-filter="website">Webapps</button>
+      <button class="filter-item" data-filter="brand">Case study</button>
+    </div>
+    <div class="portfolio-body">
+      <div class="row justify-content-evenly px-4">
+        <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+          <div class="card">
+            <img src="images/epic-games-.jpg" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h4 class="card-title">Epic Games</h4>
+              <span class="badge bg-secondary badge-pill">UI/UX</span>
+              <span class="badge bg-secondary badge-pill">Figma</span>
+              <span class="badge bg-secondary badge-pill mb-2">Game</span><br />
+              <a href="https://www.figma.com/proto/xItVzOJMiEqhWIw6M7l8Jo/Epic-Games?page-id=0%3A1&node-id=1-8&viewport=382%2C523%2C0.13&t=uKWfPC8cKUn1G9jK-1&scaling=contain&content-scaling=fixed&starting-point-node-id=1%3A3"
+                class="link">View Projects</a>
+            </div>
+          </div>
+        </div>
+        <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
+          <div class="card">
+            <img src="images/redesign-your-website.jpg" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h4 class="card-title">Website Redesign</h4>
+              <span class="badge bg-secondary badge-pill">UI/UX</span>
+              <span class="badge bg-secondary badge-pill">figma</span>
+              <span class="badge bg-secondary badge-pill mb-2">Website</span><br />
+              <a href="https://www.figma.com/proto/HNGG3ouCIQqJzWtjLYprYV/Nimesa-webpage?page-id=&node-id=25-415&viewport=167%2C776%2C0.21&t=UmvhIAmqPwhfUvEQ-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=25%3A415"
+                class="read-more-btn link">View Projects</a>
+            </div>
+          </div>
+        </div>
+        <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+          <div class="card">
+            <img src="images/Fitness.jpg" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h4 class="card-title">Fitness booking</h4>
+              <span class="badge bg-secondary badge-pill">UI/UX</span>
+              <span class="badge bg-secondary badge-pill">Figma</span>
+              <span class="badge bg-secondary badge-pill mb-2">WebApp</span><br />
+              <a href="https://www.figma.com/proto/tC63lIMQG2Iym9Deb5mB77/Fitness-Booking?page-id=0%3A1&node-id=1-2&viewport=719%2C216%2C0.15&t=PvJd3gJfQbZLndhC-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A2"
+                class="read-more-btn link">View Projects</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-evenly mt-4 px-4">
+        <div class="post col-md-4 game all brand col-10 mt-3 mt-md-0" data-aos="fade-up">
+          <div class="card">
+            <img src="images/case-studies.jpg" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h4 class="card-title">Case study</h4>
+              <span class="badge bg-secondary badge-pill">UX</span>
+              <span class="badge bg-secondary badge-pill">Research</span>
+              <span class="badge bg-secondary badge-pill mb-2">Casestudy</span><br />
+              <a href="https://www.figma.com/proto/TBp8RYg7rQKqizzdGas27i/Case-Study--Epic-Gams?page-id=0%3A1&node-id=4-2&viewport=226%2C511%2C0.14&t=AOMeuDuSG5ZDvV9V-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=4%3A2"
+                class="read-more-btn link">View Projects</a>
+            </div>
+          </div>
+        </div>
+        <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
+          <div class="card">
+            <img src="images/Cream and Brown Photographic Beauty Site Launch Website.png" class="card-img-top"
+              alt="..." />
+            <div class="card-body text-center">
+              <h4 class="card-title">Website</h4>
+              <span class="badge bg-secondary badge-pill">UI/UX</span>
+              <span class="badge bg-secondary badge-pill">Figma</span>
+              <span class="badge bg-secondary badge-pill mb-2">Website</span><br />
+              <a href="https://www.figma.com/proto/jfC3sAJchUj5XVo2qbBlAZ/POSTULATE?page-id=0%3A1&node-id=339-1192&viewport=189%2C1517%2C0.19&t=WOoqgg2G1yLCecRC-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=339%3A1192"
+                class="read-more-btn link">View Projects</a>
+            </div>
+          </div>
+        </div>
+        <div class="post col-md-4 all website col-10 mt-3 mt-md-0" data-aos="fade-up">
+          <div class="card">
+            <img src="images/dashboard.jpg" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h4 class="card-title">Dashboard</h4>
+              <span class="badge bg-secondary badge-pill">UI/UX</span>
+              <span class="badge bg-secondary badge-pill">Figma</span>
+              <span class="badge bg-secondary badge-pill mb-2">Web App</span><br />
+              <a href="https://www.figma.com/proto/AtLhgczdNsjgihxjizrYGX/Dashboard?page-id=0%3A1&node-id=3-3&viewport=549%2C398%2C0.42&t=44kz1GbCVEu0jycr-1&scaling=contain&content-scaling=fixed&starting-point-node-id=3%3A3"
+                class="read-more-btn link">View Projects</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br><hr>
+  <!-- portfolio section ends here -->
+
+
+  <!-- contact section starts -->
+  <section class="contact py-5" id="contact">
+    <div class="heading text-center">
+      <small>Get in Touch</small>
+      <h3>Ask Any Questions?</h3>
+    </div>
+    <div class="row justify-content-evenly mt-5">
+      <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
+        <div class="row justify-content-evenly">
+          <div class="col-1">
+            <i class="bi bi-geo-alt-fill"></i>
+          </div>
+          <div class="col-11">
+            <p>5/11/3-3rd st M.Thangammalpuram,</p>
+            <p>Muthaiyapuram,Thoothukudi.</p>
+          </div>
+        </div>
+        <div class="row justify-content-evenly">
+          <div class="col-1">
+            <i class="bi bi-telephone-fill"></i>
+          </div>
+          <div class="col-11">
+            <p>+91 7418001244</p>
+          </div>
+        </div>
+        <div class="row justify-content-evenly">
+          <div class="col-1">
+            <i class="bi bi-send-fill"></i>
+          </div>
+          <div class="col-11">
+            <p>sivaganesh15093@gmail.com</p>
+          </div>
+        </div>
+        <!-- <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-globe-americas"></i>
+            </div>
+            <div class="col-11">
+              <p>codingpawan.com</p>
+            </div>
+          </div> -->
+      </div>
+      <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
+        <form id="contactForm" class="contact-form">
+          <div class="mb-3">
+            <input type="text" class="form-control" id="name" name="name" placeholder="Name" required />
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" id="email" name="email" placeholder="E-mail" required />
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Mobile No." required />
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- contact section ends here -->
+
+  <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
+  <button type="button" class="btn btn-floating btn-lg rounded-pill" id="btn-back-to-top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- footer section starts  -->
+  <footer class="text-center text-muted py-4">
+    <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
+    <div class="link-group mt-5" data-aos="fade-up">
+      <a href="#home">Home</a>
+      <div class="vr"></div>
+      <a href="#about">About</a>
+      <div class="vr"></div>
+      <a href="#service">Experience</a>
+      <div class="vr"></div>
+      <a href="#portfolio">Projects</a>
+      <!-- <div class="vr"></div>
+        <a href="#blog">Blog</a> -->
+      <div class="vr"></div>
+      <a href="#contact">Contact</a>
+    </div>
+    <div justify class="social-links mt-5" data-aos="fade-up">
+      <button onclick="window.location.href='https://dribbble.com/SivaganeshUIUXDesigner'" class="rounded-pill dribble">
+        <i class="bi bi-dribbble"></i>
+      </button>
+
+      <button onclick="window.location.href='https://wa.me/7418001244'" class="rounded-pill whatsapp">
+        <i class="bi bi-whatsapp"></i>
+      </button>
+
+      <button onclick="window.location.href='https://www.behance.net/settaisivam'" class="rounded-pill behance">
+        <i class="bi bi-behance"></i>
+      </button>
+
+    </div>
+    <hr class="text-muted my-4" />
+
+    <p>Contact @ sivaganesh15093@gmail.com.</p>
+  </footer>
+  <!-- footer section ends here -->
+
+  <!-- bootstrap javascript cdn link  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+  <!-- AOS library javascript link  -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    // initializing AOS library
+    AOS.init({
+      duration: 1000,
+      offset: 50,
+    });
+  </script>
+  <!-- custom js file linking -->
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
